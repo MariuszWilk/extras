@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>pop-up</title>
+    <script type="text/javascript">
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	</script>
+  </head>
+
+  <body>
+  
+  	<div id="box">Here's some content</div>
+  	<button onClick="toggle_visibility('box')">toggle</button>
+
+  </body>
+
+  <style>
+  	#box{
+  		width: 400px;
+  		height: 300px;
+  		background: green;
+  		position: absolute;
+  		top: 200px;
+  		left: 50%;
+  	}
+  </style>
+
+</html>
